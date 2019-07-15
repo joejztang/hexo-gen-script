@@ -24,6 +24,7 @@ echo "categories:" >> $filename
 echo "tags:" >> $filename
 # echo "-" >> $filename
 echo "updated:" >> $filename
+echo "toc: true" >> $filename
 echo "---" >> $filename
 echo "" >> $filename
 mv $filename _posts/$filename
