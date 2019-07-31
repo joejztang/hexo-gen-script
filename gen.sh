@@ -28,3 +28,4 @@ echo "toc: true" >> $filename
 echo "---" >> $filename
 echo "" >> $filename
 mv $filename _posts/$filename
+vim _posts/$filename
