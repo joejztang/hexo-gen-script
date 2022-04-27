@@ -32,9 +32,17 @@ echo "---" >> $filename
 echo "" >> $filename
 if [ -z "${Folder}" ]
 then
+if [ -f "_posts/$filename" ]; then
+echo "_posts/$filename exist!"
+else
 mv $filename _posts/$filename
 vim _posts/$filename
+fi
+else
+if [ -f "_posts/$filename" ]; then
+echo "_posts/$Folder/$filename exist!"
 else
 mv $filename _posts/$Folder/$filename
 vim _posts/$Folder/$filename
+fi
 fi
