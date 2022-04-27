@@ -40,7 +40,7 @@ mv $filename _posts/$filename
 vim _posts/$filename
 fi
 else
-if [ -f "_posts/$filename" ]; then
+if [ -f "_posts/$Folder/$filename" ]; then
 echo "_posts/$Folder/$filename exist!"
 rm -rf $filename
 else
